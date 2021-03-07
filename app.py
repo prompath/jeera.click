@@ -20,3 +20,15 @@ def internal_server_error(e):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/project")
+def project():
+    return render_template("project.html")
+
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
